@@ -1,30 +1,25 @@
-# Outcomeering Website
+# Outcome Machines Website
 
-Static website for Outcomeering, the discipline introduced by Outcome Machines for leaders who design systems that produce measurable business outcomes.
+Static GitHub Pages site for Outcome Machines and Outcomeering.
 
 ## Positioning
 
-- **Outcomeering**: the discipline.
-- **Outcomeer**: the practitioner.
-- **Outcomeers**: the community.
-- **The book**: the authority anchor and field guide.
-- **Outcome Machines**: the company that helps clients bring Outcomeering into their organization.
+- **Outcome Machines**: category and company thesis.
+- **Outcomeering**: the management discipline for engineering outcomes.
+- **Outcomeer**: the practitioner identity.
+- **Outcomeering book**: thought leadership and waitlist.
+- **DatacentrIQ**: soft-linked product/platform page.
 
-## File Structure
+## Routes
 
 ```text
-outcomeering-web/
-├── index.html
-├── css/
-│   └── styles.css
-├── js/
-│   └── main.js
-└── README.md
+/                Homepage and category creation
+/outcomeering/   Discipline and framework
+/book/           Book and waitlist
+/datacentriq/    Platform and early access
 ```
 
 ## Local Development
-
-Open `index.html` directly in a browser, or run a local static server:
 
 ```bash
 python3 -m http.server 8000
@@ -32,12 +27,14 @@ python3 -m http.server 8000
 
 Then visit `http://127.0.0.1:8000`.
 
-## Content Sections
+## Deployment
 
-1. **Hero** - "Become an Outcomeer"
-2. **Outcomeering** - discipline definition
-3. **Outcomeer** - practitioner identity and practices
-4. **The shift** - dashboard model vs Outcomeering model
-5. **The book** - Outcomeering field guide
-6. **Outcomeers** - community invitation
-7. **For companies** - client conversion path for Outcome Machines
+The site deploys to GitHub Pages through `.github/workflows/pages.yml`.
+
+Custom domain:
+
+```text
+outcomeering.com
+```
+
+The repo includes `CNAME` and `.nojekyll` for GitHub Pages.
