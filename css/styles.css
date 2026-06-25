@@ -230,6 +230,7 @@ h1,
 h2,
 h3 {
   letter-spacing: -0.015em;
+  overflow-wrap: break-word;
 }
 
 h1,
@@ -323,6 +324,12 @@ h3 {
   border-color: var(--ink);
 }
 
+.button-plain {
+  color: var(--ink);
+  background: transparent;
+  border-color: rgba(13, 17, 23, 0.28);
+}
+
 .split {
   display: grid;
   grid-template-columns: minmax(0, 0.88fr) minmax(0, 1.12fr);
@@ -408,6 +415,32 @@ h3 {
   font-style: normal;
 }
 
+.thesis-strip {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 1px;
+  margin-top: 2rem;
+  background: var(--rule);
+  border: 1px solid var(--rule);
+}
+
+.thesis-strip span,
+.thesis-strip em {
+  padding: 1.1rem;
+  background: var(--white);
+  font-weight: 800;
+  text-align: center;
+}
+
+.thesis-strip em {
+  color: var(--signal);
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  font-style: normal;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
 .era-grid,
 .machine-grid,
 .principle-grid,
@@ -460,7 +493,8 @@ h3 {
 
 .loop-board,
 .contract-board,
-.book-board {
+.book-board,
+.manifesto-board {
   position: relative;
   padding: 1.15rem;
   color: var(--ink);
@@ -471,12 +505,51 @@ h3 {
 
 .loop-board::before,
 .contract-board::before,
-.book-board::before {
+.book-board::before,
+.manifesto-board::before {
   content: "";
   position: absolute;
   inset: 0.75rem;
   border: 1px dashed rgba(13, 17, 23, 0.2);
   pointer-events: none;
+}
+
+.manifesto-board {
+  align-self: stretch;
+  display: flex;
+  min-height: 480px;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: clamp(1.4rem, 3vw, 2rem);
+}
+
+.manifesto-board span {
+  position: relative;
+  z-index: 1;
+  color: var(--signal);
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.manifesto-board strong {
+  position: relative;
+  z-index: 1;
+  max-width: 560px;
+  font-family: var(--display);
+  font-size: clamp(2rem, 4vw, 3.6rem);
+  line-height: 1;
+}
+
+.manifesto-board p {
+  position: relative;
+  z-index: 1;
+  max-width: 420px;
+  margin: 0;
+  color: var(--steel);
+  font-size: 1.05rem;
 }
 
 .board-header,
@@ -568,6 +641,42 @@ h3 {
   font-weight: 800;
 }
 
+.role-board {
+  display: grid;
+  gap: 1px;
+  background: rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.role-board article {
+  min-height: 150px;
+  padding: 1.25rem;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.role-board span {
+  display: block;
+  margin-bottom: 1.1rem;
+  color: var(--signal);
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.role-board strong {
+  display: block;
+  color: var(--white);
+  font-size: 1.35rem;
+  line-height: 1.1;
+}
+
+.role-board p {
+  margin: 0.7rem 0 0;
+  color: rgba(255, 255, 255, 0.66);
+}
+
 .book-teaser,
 .waitlist-panel,
 .platform-panel {
@@ -623,6 +732,26 @@ h3 {
   color: rgba(255, 255, 255, 0.72);
 }
 
+.book-teaser-forward {
+  grid-template-columns: minmax(260px, 0.62fr) minmax(0, 1.15fr);
+}
+
+.community-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1px;
+  margin: 1.75rem 0 0;
+  background: var(--rule);
+  border: 1px solid var(--rule);
+}
+
+.community-grid span {
+  min-height: 74px;
+  padding: 1rem;
+  background: var(--white);
+  font-weight: 800;
+}
+
 .part-list {
   display: grid;
   gap: 1px;
@@ -660,6 +789,21 @@ h3 {
   padding: 1rem;
   background: var(--white);
   font-weight: 800;
+}
+
+.outcome-list-dark {
+  border-color: rgba(255, 255, 255, 0.22);
+  background: rgba(255, 255, 255, 0.22);
+}
+
+.outcome-list-dark span {
+  color: var(--white);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.company-actions {
+  max-width: var(--max);
+  margin: 3rem auto 0;
 }
 
 .site-footer {
@@ -842,6 +986,7 @@ textarea:focus,
   .page-hero .hero-inner,
   .split,
   .book-teaser,
+  .book-teaser-forward,
   .waitlist-panel,
   .platform-panel {
     grid-template-columns: 1fr;
@@ -912,6 +1057,11 @@ textarea:focus,
     font-size: clamp(3.2rem, 15vw, 4.6rem);
   }
 
+  .page-hero h1 {
+    font-size: clamp(2.7rem, 12vw, 4rem);
+    overflow-wrap: anywhere;
+  }
+
   .fact-list,
   .flow-compare,
   .era-grid,
@@ -922,9 +1072,18 @@ textarea:focus,
     grid-template-columns: 1fr;
   }
 
+  .manifesto-board {
+    min-height: 360px;
+  }
+
   .loop-list li,
   .contract-list li,
   .part {
+    grid-template-columns: 1fr;
+  }
+
+  .thesis-strip,
+  .community-grid {
     grid-template-columns: 1fr;
   }
 

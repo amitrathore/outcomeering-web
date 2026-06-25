@@ -1,22 +1,24 @@
-# Outcome Machines Website
+# Outcomeering Website
 
-Static GitHub Pages site for Outcome Machines and Outcomeering.
+Static GitHub Pages site for Outcomeering, the book, the Outcomeer role, and the Outcomeers community.
 
 ## Positioning
 
-- **Outcome Machines**: category and company thesis.
-- **Outcomeering**: the management discipline for engineering outcomes.
-- **Outcomeer**: the practitioner identity.
+- **Outcomeering**: the discipline and category.
 - **Outcomeering book**: thought leadership and waitlist.
-- **DatacentrIQ**: soft-linked product/platform page.
+- **Outcomeer**: the practitioner identity.
+- **Outcomeers**: the community for people applying the discipline.
+- **Outcome Machines**: the company bringing Outcomeering to market through platform infrastructure and services for enterprises and SMBs.
 
 ## Routes
 
 ```text
-/                Homepage and category creation
+/                Movement and category page
 /outcomeering/   Discipline and framework
 /book/           Book and waitlist
-/datacentriq/    Platform and early access
+/outcomeers/     Role and community
+/company/        Outcome Machines platform and services
+/datacentriq/    Redirects to /company/
 ```
 
 ## Local Development

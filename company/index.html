@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Outcome Machines helps large enterprises and SMBs apply Outcomeering through platform infrastructure and services.">
+  <meta name="author" content="Outcome Machines">
+  <meta property="og:title" content="Outcome Machines - Platform and Services for Outcomeering">
+  <meta property="og:description" content="Apply Outcomeering with platform infrastructure, advisory services, and implementation support.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://outcomeering.com/company/">
+  <title>Outcome Machines - Platform and Services</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700;800&family=IBM+Plex+Serif:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <nav class="site-nav" id="siteNav">
+    <a class="brand" href="../"><span class="brand-mark">O</span><span><strong>Outcomeering</strong><small>Become an Outcomeer</small></span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span></button>
+    <div class="nav-links" id="navLinks"><a href="../outcomeering/">Discipline</a><a href="../book/">Book</a><a href="../outcomeers/">Outcomeers</a><a href="../company/" aria-current="page">Outcome Machines</a><a class="nav-action" href="#" data-modal-trigger>Request a Conversation</a></div>
+  </nav>
+
+  <main class="page">
+    <section class="hero page-hero">
+      <div class="hero-inner">
+        <div class="reveal">
+          <p class="kicker">Outcome Machines</p>
+          <h1>The company bringing Outcomeering into the enterprise.</h1>
+          <p class="lede">Outcome Machines helps large enterprises and SMBs turn Outcomeering into platform-enabled operating systems for cash, retention, demand, productivity, trust, and risk.</p>
+          <div class="actions"><a class="button button-primary" href="#" data-modal-trigger>Request a Conversation</a><a class="button button-secondary" href="../outcomeering/">Learn the discipline</a></div>
+        </div>
+        <div class="loop-board reveal delay-1">
+          <div class="board-header"><span class="label">Engagement model</span><strong>Start with one outcome</strong></div>
+          <ol class="loop-list">
+            <li><b>01</b><div><strong>Diagnose</strong><p>Identify the outcome, constraint, owner, and operating context.</p></div></li>
+            <li><b>02</b><div><strong>Design</strong><p>Create the Outcome Contract, loop, twin, and intervention system.</p></div></li>
+            <li><b>03</b><div><strong>Deploy</strong><p>Use platform infrastructure and services to make the loop operational.</p></div></li>
+            <li><b>04</b><div><strong>Compound</strong><p>Run the cadence, learn from interventions, and scale what works.</p></div></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading reveal">
+        <p class="kicker">How Outcome Machines helps</p>
+        <h2>Platform and services, organized around measurable outcomes.</h2>
+      </div>
+      <div class="capability-grid reveal delay-1">
+        <article class="capability"><span>Advisory</span><strong>Outcome strategy</strong><p>Choose the highest-leverage outcome and define the contract.</p></article>
+        <article class="capability"><span>Design</span><strong>Machine architecture</strong><p>Model signals, owners, interventions, constraints, and learning paths.</p></article>
+        <article class="capability"><span>Platform</span><strong>Closed-loop infrastructure</strong><p>Monitor, explain, recommend, execute, and learn in one operating system.</p></article>
+        <article class="capability"><span>Services</span><strong>Implementation support</strong><p>Stand up workflows, governance, data connections, and adoption cadence.</p></article>
+        <article class="capability"><span>Enterprise</span><strong>Scale and governance</strong><p>Design for complex operating models, compliance, and cross-functional accountability.</p></article>
+        <article class="capability"><span>SMB</span><strong>Focused outcome machines</strong><p>Start smaller, move faster, and compound around one business-critical result.</p></article>
+      </div>
+    </section>
+
+    <section class="dark-band">
+      <div class="dark-inner">
+        <div class="split">
+          <div class="reveal">
+            <p class="kicker">Use cases</p>
+            <h2>Every important outcome can become a machine.</h2>
+          </div>
+          <div class="outcome-list outcome-list-dark reveal delay-1"><span>Cash</span><span>Retention</span><span>Demand</span><span>Productivity</span><span>Trust</span><span>Risk</span></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div><a class="brand footer-brand" href="../"><span class="brand-mark">O</span><span><strong>Outcomeering</strong><small>Become an Outcomeer</small></span></a><p>The discipline, book, and community for engineering outcomes.</p></div>
+    <nav><a href="../outcomeering/">Discipline</a><a href="../book/">Book</a><a href="../outcomeers/">Outcomeers</a><a href="../company/">Outcome Machines</a></nav>
+  </footer>
+
+  <div class="modal-overlay" id="interestModal" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="modal-header"><h2 id="modalTitle">Request a Conversation</h2><button class="modal-close" id="modalClose" aria-label="Close">x</button></div>
+      <form id="interestForm"><label>Name<input type="text" name="name" required></label><label>Work email<input type="email" name="email" required></label><label>Company size<select name="interest" required><option value="">Choose one</option><option value="enterprise">Large enterprise</option><option value="smb">SMB or mid-market</option><option value="partner">Partner or advisor</option></select></label><label>Outcome you want to move<textarea name="outcome" placeholder="Cash, retention, demand, productivity, trust, risk..."></textarea></label><button class="button button-primary" type="submit">Send request</button></form>
+      <div class="form-success" id="formSuccess"><strong>Request received.</strong><p>We will follow up with the most relevant next step.</p></div>
+    </div>
+  </div>
+  <script src="../js/main.js"></script>
+</body>
+</html>

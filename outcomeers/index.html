@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Outcomeers is the community for leaders and operators who design systems that continuously produce better outcomes.">
+  <meta name="author" content="Outcome Machines">
+  <meta property="og:title" content="Outcomeers - Become an Outcomeer">
+  <meta property="og:description" content="Join the community for people practicing Outcomeering.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://outcomeering.com/outcomeers/">
+  <title>Outcomeers - Become an Outcomeer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700;800&family=IBM+Plex+Serif:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <nav class="site-nav" id="siteNav">
+    <a class="brand" href="../"><span class="brand-mark">O</span><span><strong>Outcomeering</strong><small>Become an Outcomeer</small></span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span></button>
+    <div class="nav-links" id="navLinks"><a href="../outcomeering/">Discipline</a><a href="../book/">Book</a><a href="../outcomeers/" aria-current="page">Outcomeers</a><a href="../company/">Outcome Machines</a><a class="nav-action" href="#" data-modal-trigger>Join Outcomeers</a></div>
+  </nav>
+
+  <main class="page">
+    <section class="hero page-hero">
+      <div class="hero-inner">
+        <div class="reveal">
+          <p class="kicker">Outcomeers</p>
+          <h1>People who make outcomes move.</h1>
+          <p class="lede">Outcomeers design and operate systems that continuously produce outcomes across people, process, data, AI, and accountable intervention.</p>
+          <div class="actions"><a class="button button-primary" href="#" data-modal-trigger>Join Outcomeers</a><a class="button button-secondary" href="../outcomeering/">Learn the discipline</a></div>
+        </div>
+        <div class="manifesto-board reveal delay-1">
+          <span>Role definition</span>
+          <strong>An Outcomeer is responsible for turning desired results into designed systems.</strong>
+          <p>The job is not to admire metrics. The job is to build the loop that improves them.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading reveal">
+        <p class="kicker">Who it is for</p>
+        <h2>A shared discipline for people accountable to results.</h2>
+      </div>
+      <div class="principle-grid reveal delay-1">
+        <article class="principle"><span>CEOs</span><strong>Set outcome ambition</strong><p>Make the enterprise legible as a portfolio of outcomes.</p></article>
+        <article class="principle"><span>Operators</span><strong>Run the cadence</strong><p>Convert strategy into interventions, owners, and learning loops.</p></article>
+        <article class="principle"><span>AI builders</span><strong>Instrument the system</strong><p>Build AI into the workflow where decisions and action happen.</p></article>
+        <article class="principle"><span>Data leaders</span><strong>Move beyond reports</strong><p>Turn signals into explanations, recommendations, and feedback.</p></article>
+        <article class="principle"><span>Product leaders</span><strong>Design for adoption</strong><p>Shape systems people trust enough to use repeatedly.</p></article>
+        <article class="principle"><span>Transformation leaders</span><strong>Make change operational</strong><p>Replace episodic initiatives with self-improving mechanisms.</p></article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="split">
+        <div class="intro-lock reveal">
+          <p class="kicker">Community</p>
+          <h2>Outcomeers will start as a practical learning community.</h2>
+        </div>
+        <div class="prose reveal delay-1">
+          <p>The community will focus on the work: essays, operating templates, implementation notes, salons, workshops, and examples from companies building Outcome Machines.</p>
+          <div class="community-grid">
+            <span>Outcome Contracts</span>
+            <span>Loop design</span>
+            <span>Outcome Twins</span>
+            <span>Case clinics</span>
+            <span>CEO briefings</span>
+            <span>Workshops</span>
+          </div>
+          <div class="actions"><a class="button button-dark" href="#" data-modal-trigger>Join Outcomeers</a></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div><a class="brand footer-brand" href="../"><span class="brand-mark">O</span><span><strong>Outcomeering</strong><small>Become an Outcomeer</small></span></a><p>The discipline, book, and community for engineering outcomes.</p></div>
+    <nav><a href="../outcomeering/">Discipline</a><a href="../book/">Book</a><a href="../outcomeers/">Outcomeers</a><a href="../company/">Outcome Machines</a></nav>
+  </footer>
+
+  <div class="modal-overlay" id="interestModal" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="modal-header"><h2 id="modalTitle">Join Outcomeers</h2><button class="modal-close" id="modalClose" aria-label="Close">x</button></div>
+      <form id="interestForm"><label>Name<input type="text" name="name" required></label><label>Work email<input type="email" name="email" required></label><label>I am interested in<select name="interest" required><option value="community">Outcomeers community</option><option value="book">Book updates</option><option value="company">Working with Outcome Machines</option></select></label><label>What outcome are you accountable for?<textarea name="outcome"></textarea></label><button class="button button-primary" type="submit">Join Outcomeers</button></form>
+      <div class="form-success" id="formSuccess"><strong>You are on the list.</strong><p>We will follow up as the community opens.</p></div>
+    </div>
+  </div>
+  <script src="../js/main.js"></script>
+</body>
+</html>
