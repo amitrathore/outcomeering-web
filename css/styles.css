@@ -610,6 +610,16 @@ h3 {
   box-shadow: var(--shadow);
 }
 
+.clients-section .split {
+  grid-template-columns: minmax(0, 0.9fr) minmax(520px, 1fr);
+  gap: clamp(5rem, 9vw, 8rem);
+}
+
+.clients-section .section-intro h2 {
+  max-width: 440px;
+  font-size: clamp(2.6rem, 5vw, 4.35rem);
+}
+
 .outcome-list {
   display: grid;
   gap: 0.6rem;
