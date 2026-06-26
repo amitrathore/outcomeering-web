@@ -731,9 +731,8 @@ h3 {
 .book-face strong {
   display: block;
   font-family: var(--display);
-  font-size: clamp(2rem, 3vw, 2.85rem);
+  font-size: clamp(1.75rem, 2.7vw, 2.35rem);
   line-height: 1;
-  white-space: nowrap;
 }
 
 .book-face p {
