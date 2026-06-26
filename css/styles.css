@@ -346,6 +346,25 @@ h3 {
   align-items: start;
 }
 
+.outcome-twins-section {
+  grid-template-columns: minmax(0, 0.78fr) minmax(0, 1fr);
+  gap: clamp(4rem, 10vw, 8rem);
+}
+
+.outcome-twins-section h2 {
+  max-width: 560px;
+  font-size: clamp(2.2rem, 4.4vw, 4.3rem);
+}
+
+.outcome-twins-section .intro-lock {
+  position: static;
+}
+
+.outcome-twins-section .prose {
+  max-width: 620px;
+  padding-top: 0.35rem;
+}
+
 .intro-lock {
   position: sticky;
   top: 112px;
